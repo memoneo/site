@@ -1,0 +1,24 @@
+@import "vars.scss";
+
+.howItWorksContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+  h4 {
+  }
+}
+
+.howItWorksItem {
+  background-color: $bg-content-diff-light;
+  padding: 1rem;
+	border-radius: $border-rounded-standard;
+	z-index: 2;
+}
+
+.howItWorksTitle {
+  display: grid;
+  grid-gap: 0.4rem;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}

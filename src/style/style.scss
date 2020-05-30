@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+@import "./reset.scss";
+@import "./vars.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main {
+  background-color: $bg-content;
+  padding-bottom: 2rem;
+}
+
+body {
+  background-color: $bg-content;
+  color: $text-standard;
+  font-family: $font-family;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  color: $text-dark;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  &.title {
+    text-align: center;
+    letter-spacing: 0.4px;
+  }
+
+  @include color-transition(200ms);
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: $link;
+  cursor: pointer;
+
+  @include color-transition(200ms);
+}
+
+strong {
+  font-weight: 700;
+}
+
+.pageContent {
+  background-color: $bg-content;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid $border-standard;
+  border-radius: 4px;
+  padding: 1px 8px;
+  color: $text-light;
+  font-family: $font-family;
+  box-shadow: inherit;
+}
+
+textarea {
+  border: 1px solid $border-standard;
+  border-radius: 4px;
+  padding: 8px;
+  font-family: $font-family;
+  box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
+}
+
+:global {
+  .btn-standard {
+    text-decoration: none !important;
+    text-transform: none;
+    text-transform: capitalize;
+    color: #fff;
+    border: 0 none;
+    border-radius: 4px;
+    padding: 12px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 160px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    transition: all 200ms ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+    border: 0 none;
+    background-color: $primary-color;
+    font-family: $font-family;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:hover:enabled {
+      transition: all 200ms ease;
+      background-color: $btn-hover;
+    }
+
+    &:active {
+      transition: all 60ms ease;
+      opacity: 0.75;
+    }
+
+    &:focus {
+      //outline: 1px dotted #959595;
+      //outline-offset: -4px;
+      outline: 0;
+    }
+
+    &:disabled {
+      opacity: 0.75;
+      cursor: unset;
+    }
+  }
+
+  .error {
+    color: $error;
+    font-size: 12px;
+
+    &:not(:last-child) {
+      margin-bottom: 0.6rem;
+    }
+  }
+}
+
+.headerImage {
+  height: 12rem;
+  background-size: cover;
+  background-position-y: 22%;
+}
+
+.rowTitle {
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  margin-bottom: $header-mb;
+}
+
+.joinUsHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.showcaseItemHeaderText {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  text-align: center;
+
+  h4 {
+    margin-left: 0.4rem;
+  }
+}
+
+.introductionContainer {
+  display: grid;
+  grid-template-columns: 500px min-content;
+  margin: 2rem auto;
+	max-width: 1020px;
+  grid-gap: 4rem;
+  justify-content: space-between;
+}
+
+.introductionTextTitle {
+  margin-bottom: 1rem;
+}
+
+.newsletterSignupTitle {
+  h1 {
+    margin-bottom: $header-mb;
+  }
+}
+
+.newsletterSignupForm {
+  display: grid;
+  grid-template-columns: 200px 120px 200px 120px;
+  margin-top: 1.2rem;
+  grid-gap: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletterRow {
+  min-height: 300px;
+}
+
+.remainingQuestionsContainer {
+  display: grid;
+  grid-template-columns: 200px 120px;
+  grid-gap: 2.5rem;
+  align-items: center;
+}
+
+.rowTestOuter {
+  position: relative;
+}
+
+.rowTest {
+  padding: 2rem 0;
+  margin: 2rem 0;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #f6f9fc;
+    transform: skewY(-3deg);
+  }
+}
+
+.rowNormal {
+  z-index: 5;
+}
+
+.headerRow {
+  //background: linear-gradient(150deg, rgb(0, 13, 41) 15%, #0571ff 70%, #a6ffcb 94%);
+}

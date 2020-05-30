@@ -1,0 +1,33 @@
+@import "vars.scss";
+
+.container {
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.imgContainer {
+  box-shadow: 0 24px 48px 0 rgba(174, 174, 186, 0.32);
+  img {
+    width: 720px;
+  }
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.textContainer {
+  position: absolute;
+  width: 400px;
+  border-radius: $border-rounded-standard;
+  box-shadow: 0 24px 48px 0 rgba(174, 174, 186, 0.32);
+  background-color: $bg-content-diff;
+  padding: 2rem;
+  bottom: 0;
+  left: 0;
+}
+
+.introImage {
+	width: 412px;
+	border-radius: 12px;
+}

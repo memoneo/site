@@ -1,0 +1,17 @@
+@import "vars.scss";
+
+.row {
+	z-index: 1;
+	position: relative;
+	padding: 1rem 0;
+}
+
+.rowContent {
+	max-width: $content-width;
+	margin: 0 auto;
+	padding: 1rem 0;
+}
+
+.rowDiff {
+	background-color: $bg-content-diff;
+}

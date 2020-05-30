@@ -1,0 +1,24 @@
+@import "vars.scss";
+
+.showcase {
+  max-width: 1020px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.showcaseItem {
+  width: 450px;
+  margin-bottom: 4rem;
+  &:nth-of-type(even) {
+		grid-column: 2;
+		transform: translateY(75px);
+  }
+}
+
+.showcaseItemTitle {
+  margin-bottom: 0.6rem;
+}
+
+.icon {
+  margin-right: 1rem;
+}

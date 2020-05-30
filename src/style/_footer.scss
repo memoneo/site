@@ -1,0 +1,86 @@
+@import "vars.scss";
+
+.footer {
+  transition: all 0.2s ease 0s;
+  background-color: $bg-footer;
+  padding: 20px;
+  margin-top: 0.4rem;
+}
+
+.footerTitle {
+  text-align: center;
+  padding-bottom: 0.8rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 12px;
+  //color: $text-dark;
+}
+
+.smBar {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.copyright::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: $link;
+  margin: 10px auto;
+}
+
+.infoMenu {
+  text-align: center;
+  a {
+    padding: 0.2rem;
+  }
+}
+
+.licenseContainer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.discPrivTosBar {
+  justify-content: center;
+  display: flex;
+  li:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.socialIconBar {
+  display: flex;
+  a:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.footerBar {
+  display: grid;
+	max-width: $content-width / 2;
+  margin: 0 auto;
+  align-items: center;
+  grid-template-columns: min-content auto min-content;
+}
+
+.footerMenu {
+  display: flex;
+	margin: 0 auto;
+	max-width: $content-width / 2;
+	justify-content: center;
+  .footerMenuItem {
+    flex: 1 0 33.33%;
+    h4 {
+      color: $text-medium;
+      margin-bottom: 0.4rem;
+    }
+    a {
+      line-height: 24px;
+    }
+	}
+	margin-bottom: 2rem;
+}

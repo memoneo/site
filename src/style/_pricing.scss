@@ -1,0 +1,36 @@
+@import "vars.scss";
+
+.pricingContainer {
+  grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.pricingItemContainer {
+  padding: 1rem;
+  border-radius: $border-rounded-standard;
+  background-color: $bg-content-diff-gray;
+}
+
+.pricingRow {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 0.2rem;
+  }
+}
+
+.pricingCheckIcon,
+.pricingDollarIcon {
+  margin-right: 0.4rem;
+  svg {
+    // TODO dirty
+    padding: 2px !important;
+  }
+}
+
+.pricingCheckIcon svg {
+  background-color: $long !important;
+}

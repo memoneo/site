@@ -1,0 +1,84 @@
+@import "vars.scss";
+
+.logoContainer {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5rem;
+	margin-top: 2rem;
+
+	>img {
+		width: 64px;
+	}
+}
+
+.navContainer {
+	background-color: $bg-content;
+	padding: 0.5rem 0;
+	.nav {
+		display: grid;
+		grid-template-columns: max-content auto max-content;
+		grid-gap: 4rem;
+		align-items: center;
+		position: relative;
+		max-width: $content-width;
+		margin: 0 auto;
+		padding: 0.2rem;
+		transition: all 0.2s ease 0s;
+
+		.logoContainer {
+			display: flex;
+		}
+		.navigationBar {
+			display: flex;
+			a {
+				margin: 0 1rem;
+			}
+		}
+		.buttonBar {
+			display: flex;
+			:global(.btn) {
+				margin: 0 1rem;
+				padding: 0.4rem;
+				flex: 0 0 120px;
+			}
+		}
+
+		.right {
+			display: none;
+			.rightNav {
+				display: flex;
+				align-items: center;
+
+				li {
+					padding: 0 8px;
+				}
+			}
+		}
+
+		ul>li>.active {
+			color: $caption;
+
+			&::after {
+				display: table;
+				clear: both;
+				content: "";
+			}
+		}
+
+		svg {
+			vertical-align: middle;
+		}
+
+		.rightNav {
+			&::after {
+				display: table;
+				clear: both;
+				content: "";
+			}
+		}
+	}
+}
+
+.logoIcon {
+	margin-right: 0.5rem;
+}
