@@ -39,17 +39,7 @@ export default () => (
         <form className={displayStyle.newsletterSignupForm}>
           <input type="email" name="mail" required />
         </form>
-        <button
-          style={{
-            border: 0,
-            padding: "0.4rem",
-            backgroundColor: "#A4C9FF",
-            color: "white",
-            borderRadius: 4,
-          }}
-        >
-          Sign up
-        </button>
+        <button className="btn btn-standard" style={{width: "120px"}}>Disabled</button>
       </div>
       <img
         className={displayStyle.introImage}
