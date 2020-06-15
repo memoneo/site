@@ -1,13 +1,12 @@
 import * as React from "react"
 import staticWrapper from "../lib/static"
-
-import * as style from "../style/_nav.scss"
+import { navStyle } from "../lib/reexports"
 
 const Header: React.FunctionComponent = props => (
-  <nav className={style.navContainer}>
-    <div className={style.nav}>
-      <div className={style.logoContainer}>
-        <img className={style.logoImage} src={staticWrapper("/logo.svg")} />
+  <nav className={navStyle.navContainer}>
+    <div className={navStyle.nav}>
+      <div className={navStyle.logoContainer}>
+        <img className={navStyle.logoImage} src={staticWrapper("/logo.svg")} />
         Memoneo
       </div>
     </div>

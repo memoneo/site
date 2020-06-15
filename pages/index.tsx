@@ -1,19 +1,14 @@
 import * as React from "react"
 
-import { Layout, Row, Showcase, RowContent, Header } from "../src/components"
+import { Layout } from "../src/components"
 import staticWrapper from "../src/lib/static"
 
-import featuresItems from "../src/constants/features"
-import useCasesItems from "../src/constants/useCases"
-
-import * as style from "../src/style/style.scss"
-import FloatingShowcase from "../src/components/FloatingShowcase"
 import { SITE_NAME } from "../src/constants/env"
 import { displayStyle, navStyle } from "../src/lib/reexports"
 
-export default props => (
+export default () => (
   <Layout>
-    <div className={style.introductionContainer}>
+    <div className={displayStyle.introductionContainer}>
       <div>
         <div className={navStyle.logoContainer}>
           <img
@@ -22,8 +17,8 @@ export default props => (
           />
           Memoneo
         </div>
-        <div className={style.introductionText}>
-          <h1 className={style.introductionTextTitle}>
+        <div className={displayStyle.introductionText}>
+          <h1 className={displayStyle.introductionTextTitle}>
             Productivity diary app
           </h1>
           <p>
@@ -32,15 +27,16 @@ export default props => (
           </p>
         </div>
         <div
-          className={style.newsletterSignupTitle}
-          style={{ marginTop: "4rem" }}>
+          className={displayStyle.newsletterSignupTitle}
+          style={{ marginTop: "4rem" }}
+        >
           <h3>Stay up to date</h3>
           <p>
             {SITE_NAME} currently has alpha status. Sign up to the newsletter to
             stay up to date.
           </p>
         </div>
-        <form className={style.newsletterSignupForm}>
+        <form className={displayStyle.newsletterSignupForm}>
           <input type="email" name="mail" required />
         </form>
         <button
@@ -50,7 +46,8 @@ export default props => (
             backgroundColor: "#A4C9FF",
             color: "white",
             borderRadius: 4,
-          }}>
+          }}
+        >
           Sign up
         </button>
       </div>

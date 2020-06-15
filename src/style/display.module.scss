@@ -4,7 +4,7 @@
   margin-top: 2rem;
   position: relative;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .imgContainer {
@@ -30,4 +30,31 @@
 .introImage {
 	width: 412px;
 	border-radius: 12px;
+}
+
+.introductionContainer {
+  display: grid;
+  grid-template-columns: 500px min-content;
+  margin: 2rem auto;
+	max-width: 1020px;
+  grid-gap: 4rem;
+  justify-content: space-between;
+}
+
+.introductionTextTitle {
+  margin-bottom: 1rem;
+}
+
+.newsletterSignupTitle {
+  h1 {
+    margin-bottom: $header-mb;
+  }
+}
+
+.newsletterSignupForm {
+  display: grid;
+  grid-template-columns: 200px 120px 200px 120px;
+  margin-top: 1.2rem;
+  grid-gap: 2.5rem;
+  margin-bottom: 1rem;
 }

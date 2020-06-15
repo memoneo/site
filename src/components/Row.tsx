@@ -1,7 +1,6 @@
 import * as React from "react"
 
-import * as style from "../style/_row.scss"
-import { cx } from "../lib/reexports"
+import { cx, rowStyle } from "../lib/reexports"
 
 interface Props {
   outerClassName?: string
@@ -13,7 +12,7 @@ interface Props {
 export default class Row extends React.Component<Props, any> {
   render(): JSX.Element {
     const { children, className, diff, outerClassName } = this.props
-    const classes = cx(style.row, { [style.rowDiff]: diff }, outerClassName)
+    const classes = cx(rowStyle.row, { [rowStyle.rowDiff]: diff }, outerClassName)
 
     return (
       <div className={classes}>

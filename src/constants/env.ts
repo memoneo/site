@@ -1,5 +1,5 @@
 export const DEV = process.env.NODE_ENV !== "production"
-export const BASE_PATH = "/landingpage"
+export const BASE_PATH = "/site"
 
 export const GA_TRACKING_ID = ""
 export const FB_TRACKING_ID = ""
