@@ -26,20 +26,6 @@ export default () => (
             right questions in a structured and ongoing way.
           </p>
         </div>
-        <div
-          className={displayStyle.newsletterSignupTitle}
-          style={{ marginTop: "4rem" }}
-        >
-          <h3>Stay up to date</h3>
-          <p>
-            {SITE_NAME} currently has alpha status. Sign up to the newsletter to
-            stay up to date.
-          </p>
-        </div>
-        <form className={displayStyle.newsletterSignupForm}>
-          <input type="email" name="mail" required />
-        </form>
-        <button className="btn btn-standard" style={{width: "120px"}}>Disabled</button>
       </div>
       <img
         className={displayStyle.introImage}
